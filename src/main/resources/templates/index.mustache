@@ -1,0 +1,31 @@
+{{>layout/header}}
+    <h1> 웹프로그래밍 기말고사(쇼핑몰 상품관리) </h1>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="clo-md-6">
+                    <a href="/posts/save" role="button" class="btn btn-primary">상품등록</a>
+                </div>
+            </div>
+        <br>
+        <table class="table table-horizontal table-bordered">
+            <thead class="thread-strong">
+            <tr>
+                <th>상품ID</th>
+                <th>상품명</th>
+                <th>상품가격</th>
+                <th>상품설명</th>
+            </tr>
+            </thead>
+            <tbody id="tbody">
+            {{#posts}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</a></td>
+                    <td>{{price}}</td>
+                    <td>{{desc}}</td>
+                </tr>
+            {{/posts}}
+            </tbody>
+        </table>
+        </div>
+{{>layout/header}}
